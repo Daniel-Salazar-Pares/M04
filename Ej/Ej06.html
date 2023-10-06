@@ -1,15 +1,61 @@
 <html>
     <body>
-        <fieldset>
-            <legend>Ficha de la pelicula</legend>
-            <label for="titulo">Título </label>
-            <input type="text" id="titulo" name="nombreTitulo"><br><br>
-            <label for="director">Director </label>
-            <input type="text" id="director" name="nombreDirector"><br><br>
-            <label for="data">Fecha de estreno: </label>
-            <input type="date" id="data" name="dataLlancament"><br><br>
-            <label for="poster">Póster: </label>
-            <input type="file" id="poster" name="posterPeli"><br><br>
-        </fieldset>
+        <form>
+            <fieldset>
+                <legend>Ficha de la pelicula</legend>
+                <label for="titulo">Título </label>
+                <input type="text" id="titulo" name="nombreTitulo"><br><br>
+                <label for="director">Director </label>
+                <input type="text" id="director" name="nombreDirector"><br><br>
+                <label for="data">Fecha de estreno: </label>
+                <input type="date" id="data" name="dataLlancament"><br><br>
+                <label for="poster">Póster: </label>
+                <input type="file" id="poster" name="posterPeli"><br><br>
+                <legend>Versión: </legend>
+                <input type="checkbox" id="IMAX" name="Versión" value="IMAX">
+                <label for="IMAX"> IMAX</label>
+                <input type="checkbox" id="3D" name="Versión" value="3D">
+                <label for="3D"> 3D </label>
+                <input type="checkbox" id="Full HD" name="Versión" value="Full HD">
+                <label for="Full HD"> Full HD </label> <br><br>
+
+                <legend>Clasificación: </legend>
+                <input type="radio" id="TP" name="Clasificación" value="TP">
+                <label for="TP">TP</label>
+                <input type="radio" id="+12" name="Clasificación" value="+12">
+                <label for="+12">+12</label>
+                <input type="radio" id="+15" name="Clasificación" value="+15">
+                <label for="+15">+15</label>
+                <input type="radio" id="+18" name="Clasificación" value="+18">
+                <label for="+18">+18</label>
+            </fieldset>
+            <fieldset>
+                <legend>Ficha de proyección</legend>
+                <label for="sala">Sala:  </label>
+                <input type="text" id="sala" name="sala"><br><br>
+                <textarea name="sipnosis" rows="10" cols="50"> Escribe una breve sipnosis </textarea> <br><br>
+               <select>
+                    <option value="Ingles">Ingles</option>
+                    <option value="Catala">Catala</option>
+                    <option value="Castellano">Castellano</option>
+                </select>
+                <br><br>
+                <select id="dias_proyeccion" name="dias_proyeccion" size="4">
+                    <option value="lunes">lunes</option>
+                    <option value="martes">martes</option>
+                    <option value="miercoles">miercoles</option>
+                    <option value="jueves">jueves</option>
+                    <option value="viernes">viernes</option>
+                    <option value="sabado">sabado</option>
+                    <option value="domingo">domingo</option>
+                </select>
+                <br><br>
+                <label for="coloDeFondo">Elige un color de fondo: </label>
+                <input type="color" name="coloDeFondo" id="coloDeFondo">
+                <br><br>
+                <label for="putuacion">Puntuacion del publico</label>
+                <progress id="Puntuacion" value="87" max="100"></progress>
+            </fieldset>
+        </form>
     </body>
 </html>
